@@ -1,0 +1,6 @@
+{
+  "name": "TechNova Interactive Networking & IT Support Simulator",
+  "description": "Interactive 30-day networking curriculum and IT support engineering lab simulator featuring animated packet visualizer, terminal, troubleshooting tickets, and competency tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

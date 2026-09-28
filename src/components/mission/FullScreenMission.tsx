@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { DayCurriculum, ITTicket, NetworkDevice, PacketInfo, ProtocolType } from '../../types/curriculum';
 import { Day01HumanExperience } from './Day01HumanExperience';
 import { Day02HumanExperience } from './Day02HumanExperience';
+import { Day03HumanExperience } from './Day03HumanExperience';
 import { NetworkCanvas } from '../NetworkCanvas';
 import { PacketInspector } from '../PacketInspector';
 import { SubnetExplorer } from '../SubnetExplorer';
@@ -57,6 +58,18 @@ export const FullScreenMission: React.FC<FullScreenMissionProps> = ({
   if (day.id === 2) {
     return (
       <Day02HumanExperience
+        day={day}
+        ticket={ticket}
+        onExitMission={onExitMission}
+        onCompleteMission={onCompleteMission}
+      />
+    );
+  }
+
+  // Day 3: The Apartment Address — IPv4 Logical Addressing Experience
+  if (day.id === 3) {
+    return (
+      <Day03HumanExperience
         day={day}
         ticket={ticket}
         onExitMission={onExitMission}

@@ -220,6 +220,7 @@ export default function App() {
   if (activeMissionDayId !== null) {
     return (
       <FullScreenMission
+        key={activeMissionDayId}
         day={missionDay}
         ticket={missionTicket}
         onExitMission={handleExitMission}

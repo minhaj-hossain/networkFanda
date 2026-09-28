@@ -114,6 +114,13 @@ This tracker monitors the structural implementation of the 30-Day Interactive Ne
    - Atmospheric Hero Section with high-fidelity network asset, clear role orientation ("Where am I"), and prominent Current Mission spotlight card ("What should I do next").
    - 6-Level Sequential Career Roadmap connecting days horizontally (`Day 01 → Day 02 → Day 03 → Day 04 → Day 05`) with clear completion and active status indicators.
    - Verified zero-pill metadata compliance, anti-slop typography discipline, and seamless transition to the dedicated pre-flight Mission Briefing and full-screen mission simulation workspace.
+9. **Day 03 — IPv4 Addressing Human Experience** (`Day03HumanExperience`):
+   - Stage 1: Interactive IPv4 anatomy — 4 clickable octets with human mailing-label vs binary engineer view, network/host brackets, 32-bit strip, and per-octet deep-dive panel.
+   - Stage 2: Address-space classification game — RFC 1918 private, public, loopback, and APIPA ranges (including the `172.32.x.x` trap) with gated progression.
+   - Stage 3: Curriculum prediction quiz plus live ping lab — flip PC-A's third octet and watch scripted CMD output alternate between `0% loss` and `Request timed out` with step-by-step stack narration.
+   - Stage 4: Ticket #1005 — diagnose the wrong-third-octet print server outage, apply the IP fix, and verify with a real ping console.
+   - Stage 5: Celebration badge with `Save Progress` / `Unlock & Launch Day 04 (Subnet Masks)` flow.
+10. **App Bootstrap Repair**: Restored the missing Vite entry point (`src/main.tsx`) and Tailwind v4 CSS entry (`src/index.css`) — the committed tree previously had no runtime entry, so `index.html` could not resolve `/src/main.tsx` and `npm run build` failed. Also added `key={activeMissionDayId}` to `<FullScreenMission>` so switching between bespoke day experiences (early-return components) and the generic stage flow remounts cleanly instead of tripping React's hook-order invariant.
 
 ### To Finish (Next Extensible Features):
 1. User-created custom packet generator (crafting raw TCP/IP packets with custom TTL and payload).
